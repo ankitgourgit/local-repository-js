@@ -1,0 +1,55 @@
+<!-- <html>
+  <script>
+    const data = {
+     "name": "ankit",
+      "age": "29",
+      "hobby": {
+        "reading": true,
+        "gaming": false,
+        "sport": "football",
+      },
+      "class":["JavaScript", "HTML", "CSS"]
+    };
+
+    //accessing json obj
+    console.log(data.name);
+    console.log(data["age"]);
+    console.log(data.hobby);
+    console.log(data.hobby.sport);
+    console.log(data.class[1]);
+    console.log(typeof(data));
+
+
+
+  </script>
+</html> -->
+
+
+<html>
+    <script>
+     // json object 
+     const jsonData = '{ "name": "John", "age": 22 }';
+     console.log(typeof(jsonData));
+     console.log(jsonData);
+     //converting into js obj
+     const obj=JSON.parse(jsonData)
+     console.log(typeof(obj));
+     console.log(obj);
+
+
+     // JavaScript object
+     const jsobj = {
+         "name": "ankit",
+          "age": 29 
+        };
+        console.log(typeof(jsobj))
+        console.log(jsobj)
+     //converting into json
+        const strJsonObj = JSON.stringify(jsobj);
+        console.log(typeof(strJsonObj))
+        console.log(strJsonObj)
+
+
+
+    </script>
+</html>

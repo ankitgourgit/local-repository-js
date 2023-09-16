@@ -1,0 +1,47 @@
+<html>
+  <p id="demo"></p>
+  <p id="demo1"></p>
+  <script>
+    
+    //cricketer class
+    class Crickter {
+      constructor(name, year) {
+        this.name = name;
+        this.year = year;
+      }
+
+      age() {
+        const date = new Date();
+        return date.getFullYear() - this.year;
+      }
+    };
+ 
+    //create player obj
+    const player = new Crickter("sachin", 1973);
+    document.getElementById("demo").innerHTML =
+      "The age of " + player.name + " is " + player.age();
+
+
+//item class
+    class Item{
+        constructor(mat,productdate){
+            this.material= mat ;
+            this.onproduct= productdate;
+        }
+        expiry(){
+            const date= new Date()
+            const currentyear=date.getFullYear();
+            if(this.onproduct<=currentyear){
+                return " not expired :)"
+            }else{
+                return "expired :( "
+            }
+        }
+    };
+
+    //create grocery obj
+    const grocery=new Item("oil",2023);
+    document.getElementById("demo1").innerHTML="The product is " + grocery.expiry();
+
+  </script>
+</html>

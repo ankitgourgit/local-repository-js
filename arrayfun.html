@@ -1,0 +1,107 @@
+<!-- <html>
+    <script>
+        let arr=[45,20,24];
+
+       let a= arr.map((value,index)=>{
+            console.log(value)
+            return value+index;
+        })
+        console.log(a);
+
+    </script>
+</html> -->
+
+
+<!-- <html>
+    <script>
+        let arr=[1,2,3,11,12,13];
+        let aar1=arr.filter((value)=>{
+            return value>10
+        })
+
+        console.log(aar1)
+
+    </script>
+</html> -->
+
+
+<!-- <html>
+    <script>
+        let arr=[1,2,3,4,5];
+        let arr2=arr.reduce((v1,v2)=>{
+            return v1+v2
+        })
+        console.log(arr2)
+    </script>
+</html> -->
+
+
+<!-- <html>
+    <script>
+        let arr=[1,2,3,4]
+       arr.forEach((value)=>{
+          console.log (value+1)
+        })
+    </script>
+</html> -->
+
+
+<html>
+    <script>
+        let user={
+            name:'ankit',
+            stream:'IT',
+            age: 29
+        }
+
+       /* let str="ankit"
+        arr=Array.from(str);
+        console.log(user)
+
+        console.log(user);
+       array= Array.from(user)
+        console.log(array[0])*/
+        
+      let properties = Object.keys(user)
+        for(let prop of properties){
+            console.log(prop)
+        }
+
+        let value=Object.values(user)
+        for(let val of value){
+            console.log(val)
+        }
+
+      //  let entries=Object.entries(user)
+      //  for(entry of entries){
+       //     console.log(`${entry[0]}:${entry[1]}`)
+      //  }
+
+        let entries=Object.entries(user)
+        for([key,value] of entries){
+            console.log(`${key}:${value}`)
+        }
+
+       
+    </script>
+</html>
+
+
+<!-- <html>
+    <script>
+        let num=[5,4,3,2,1]
+
+    //    for(let i=0;i<num.length;i++){
+       //     console.log(num[i]);
+     //   }
+
+    // for(let item of num){
+     //   console.log(item)
+    // }
+
+    for(let index in num){
+        console.log(num[index])
+    }
+
+    </script>
+</html> -->

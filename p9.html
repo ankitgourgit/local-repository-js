@@ -1,0 +1,14 @@
+<html>
+    <p id="demo"></p>
+    <script>
+        const myPromise = new Promise((myResolve,myReject)=>{
+            setTimeout(()=>{
+                myResolve("i love you!!!!")
+            },3000)
+        });
+        myPromise.then((value)=>{
+            document.getElementById("demo").innerHTML = value;
+        })
+
+    </script>
+</html>

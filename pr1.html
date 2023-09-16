@@ -1,0 +1,94 @@
+<!-- <html>
+
+<script>
+    var arr = ["cat", "dog", "elephant", "giraf"];
+    var arr2=["donkey","monkey"];
+
+    var combine=[...arr,...arr2]
+
+    document.write(combine)
+
+    function largestLeng(arr) {
+        let longestLength = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (typeof arr[i] === 'string' && arr[i].length > longestLength) {
+                longestLength = arr[i].length
+            }
+        }
+        return longestLength
+
+    }
+
+    const longestLength = largestLeng(arr);
+    console.log("the longest string length of",longestLength)
+
+
+
+
+</script>
+
+</html> -->
+
+<html>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4">hey</p>
+    <script>
+        const weekdays=['sunday','monday','tuesday','wednesday','thursday','friday','satrday']
+        
+        const monthname=['janury',"feb",'march',"april",'may','june','july','august','september','octomber','november','december']
+
+        const d= new Date()
+        console.log(d)
+    
+        const day=weekdays[d.getDay()]
+        console.log("Day:",day);
+
+        const month=d.getMonth();
+        console.log("Month:",monthname[d.getMonth()])
+
+        const date=d.getDate()
+        console.log('Date:',date)
+
+        const year=d.getFullYear()
+        console.log('Year:',year)
+
+        const hour=d.getHours()
+        console.log('Hour:',hour)
+
+        const min=d.getMinutes()
+        console.log('Minutes:',min)
+
+        const sec=d.getSeconds()
+        console.log('Seconds:',sec)
+
+
+        document.getElementById("demo").innerHTML=`Today is: ${day}`
+        document.getElementById("demo1").innerHTML=`Current time is: ${hour}hour:${min}min:${sec}sec`
+
+        document.getElementById("demo2").innerHTML=`${date}/${month+1}/${year}`
+
+
+       function areaOfTriangle(b,h){
+        area=1/2*b*h
+        return area;
+       }
+      
+       let a=3
+       let b=6
+       areaOfTriangle(a,b);
+      
+       console.log(area)
+
+       const res=document.getElementById("demo4").innerHTML
+
+       console.log(res);
+
+
+      //  window.print()
+
+
+    </script>
+</html>

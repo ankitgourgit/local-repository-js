@@ -1,0 +1,77 @@
+<html>
+    <script>
+        const workers=["ram","raj"," shyam"," murli"];
+        const num=[1,2,3,4,5];
+        const worker={
+            id:"123",
+            grade:"B1",
+            salary:500000
+        }
+
+
+        console.log(worker)
+        console.log(workers);
+        console.log(num);
+
+        //for each
+        const find =workers.forEach((worker)=>{
+            let surname=' gour';
+        console.log(worker+ surname)
+        })
+
+        //map function
+       let newArr= workers.map((value,index)=>{
+        return value+index
+        })
+        console.log(newArr)
+        
+
+        //filter 
+       const filval= workers.filter((value)=>{
+            return value.length>3
+        })
+        console.log(filval);
+
+        //reduce
+        multiply=num.reduce((p1,p2)=>{
+            return p1*p2
+        })
+        console.log(multiply)
+
+        //for ,for of ,for in
+        for(i=0;i<num.length;i++){
+            console.log(num[i]);
+        }
+
+        for(name of workers){
+            console.log(name);
+        }
+
+
+        for(index in workers){
+            console.log(workers[index]);
+        }
+
+        
+// Method to convert oject in array
+
+    const workerkey=Object.keys(worker) //only key 
+    for(key of workerkey){
+        console.log(key)
+    }
+
+    const values=Object.values(worker) //only value
+    for(value of values){
+        console.log(value)
+    }
+
+    const workerobject=Object.entries(worker) //both key & value
+    //for ([obj of workerobject){
+   for ([key,value] of workerobject){
+        console.log(`${key}:${value}`)
+    }
+
+
+
+    </script>
+</html>
